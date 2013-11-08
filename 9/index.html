@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pony Search</title>
+  </head>
+
+  <body ng-app="PonySearch">
+    <div class="wrapper" data-ng-controller="MainCtrl">
+      <p ng-bind="message"></p>
+      <label for="search">Search Ponies!!!</label>
+      <input  id="search"
+              name="search"
+              placeholder="Enter Keyword"
+              autofocus
+              ng-model="keyword" />
+      <input type="submit" value="Search" ng-click="search()">
+      
+      <p> You searched for <span ng-bind="keyword"></span>.</p>
+      <section>
+        <div ng-repeat="result in results|filter:keyword"> <!-- semantically this should be <pony> -->
+          <div>Name: <span ng-bind="result.name" /></div>
+          <img ng-src="{{result.image}}" style="width:100px; height:100px;" />
+        </div>
+      </section>
+    </div>
+    <script src="lib/angular.min.js"></script>
+    <script src="javascripts/app.js"></script>
+
+  </body>
+</html>

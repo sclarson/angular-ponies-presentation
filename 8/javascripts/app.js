@@ -5,7 +5,7 @@ PonySearch.controller("MainCtrl", ["$scope", "$http", function($scope,$http){
 	
 	
 	$scope.search = function(){
-		$http.get('/ponies.json').then(
+		$http.get('/ponies.json').then( // data access layer stuff in controller =/ 
 			function(response){ // SUCCESS
 				var data = response.data;
 				console.log(response);
