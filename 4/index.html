@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pony Search</title>
+  </head>
+
+  <body ng-app="PonySearch">
+    <div class="wrapper" data-ng-controller="MainCtrl">
+      <p ng-bind="message"></p>
+      <label for="search">Search Ponies!!!</label>
+      <input  id="search"
+              name="search"
+              placeholder="Enter Keyword"
+              autofocus
+              ng-model="keyword">
+
+      <p> You searched for <span ng-bind="keyword"></span>.</p>
+
+    </div>
+    <script src="lib/angular.min.js"></script>
+    <script src="javascripts/app.js"></script>
+
+  </body>
+</html>

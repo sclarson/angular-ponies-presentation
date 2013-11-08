@@ -1,0 +1,21 @@
+1 - Basic Structure
+
+2 - Add input and demonstrate basic data bind
+	http://docs.angularjs.org/guide/databinding
+
+3 - Add most basic controller syntax and demonstrate scope variables
+	http://docs.angularjs.org/guide/controller
+
+4 - Create angular module and move controller to angular controller
+	http://docs.angularjs.org/guide/module
+
+5 - Add search button click directive, results repeat directive, and demo data hardcoded
+
+6 - Add filter to results
+	http://docs.angularjs.org/api/ng.filter:filter
+7 - Demo filters work 
+
+8 - Images and adding $http to dependencies
+	http://docs.angularjs.org/api/ng.$http
+
+	

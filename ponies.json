@@ -1,0 +1,7 @@
+
+[
+	{"name":"Rainbow Dash", "type":"Pegasus", "image": "/images/rainbow_dash.png" },
+	{"name":"Twilight Sparkle", "type":"Unicorn", "image": "/images/twilight_sparkle.png"}, 
+	{"name":"Fancy Pants", "type":"Unicorn", "image": "/images/fancypants.png"},
+	{"name":"Applejack", "type":["Earth","Normal"], "image":"/images/apple_jack.png"}
+	]
