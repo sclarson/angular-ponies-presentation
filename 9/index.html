@@ -18,10 +18,8 @@
       
       <p> You searched for <span ng-bind="keyword"></span>.</p>
       <section>
-        <div ng-repeat="result in results|filter:keyword"> <!-- semantically this should be <pony> -->
-          <div>Name: <span ng-bind="result.name" /></div>
-          <img ng-src="{{result.image}}" style="width:100px; height:100px;" />
-        </div>
+        <pony ng-repeat="result in results|filter:keyword" result="{{result}}">
+        </pony>
       </section>
     </div>
     <script src="lib/angular.min.js"></script>

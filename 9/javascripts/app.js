@@ -31,3 +31,12 @@ PonySearch.controller("MainCtrl", ["$scope", "PonyPopulator", function($scope,Po
 		$scope.results = PonyPopulator.fetchAll();
 	}
 }]);
+
+PonySearch.directive("pony", function(){
+	return {
+		restrict: 'E', // subset of EACM (element attribut class comment) 
+		required: "^result",
+		template: '<div class="pony"><div>Name: <span ng-bind="result.name" /></div><img ng-src="{{result.image}}" style="width:100px; height:100px;" /></div>',
+        replace: true
+	}
+});
