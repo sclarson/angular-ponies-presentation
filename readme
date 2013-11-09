@@ -15,7 +15,12 @@
 	http://docs.angularjs.org/api/ng.filter:filter
 7 - Demo filters work 
 
-8 - Images and adding $http to dependencies
+8 - Images and adding $http to dependencies, introduce service
 	http://docs.angularjs.org/api/ng.$http
+
+9 - Move html into a pony directive
+	http://docs.angularjs.org/guide/directive
+
+The links to the docs are nearly trolling. If you work with angular and want to give back please help them with documentation.
 
 	
